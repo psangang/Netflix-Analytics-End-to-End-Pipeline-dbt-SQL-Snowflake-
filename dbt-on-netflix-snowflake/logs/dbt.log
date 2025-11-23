@@ -1,0 +1,30 @@
+[0m09:27:24.781322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100f0920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111ff7170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110277380>]}
+
+
+============================== 09:27:24.816711 | 4f276a9c-1fd1-4dc7-9e1e-8cbcb7c047a4 ==============================
+[0m09:27:24.816711 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:27:24.817216 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'printer_width': '80', 'target_path': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'log_format': 'default', 'no_print': 'None', 'use_colors': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'cache_selected_only': 'False', 'debug': 'False', 'quiet': 'False', 'version_check': 'True', 'warn_error': 'None', 'empty': 'None', 'log_path': 'logs', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/psangang/.dbt'}
+[0m09:28:02.770416 [debug] [MainThread]: Starter project path: /Users/psangang/Desktop/Learning/DE_2025/dbt-on-netflix-snowflake/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:28:02.778607 [info ] [MainThread]: 
+Your new dbt project "dbt_netflix_param" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:28:02.778970 [info ] [MainThread]: Setting up your profile.
+[0m09:33:39.956193 [info ] [MainThread]: Profile dbt_netflix_param written to /Users/psangang/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:33:39.960812 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 375.25906, "process_in_blocks": "0", "process_kernel_time": 0.433686, "process_mem_max_rss": "152846336", "process_out_blocks": "0", "process_user_time": 1.785241}
+[0m09:33:39.962566 [debug] [MainThread]: Command `dbt init` succeeded at 09:33:39.962314 after 375.26 seconds
+[0m09:33:39.963147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110277380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113a23050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111690200>]}
+[0m09:33:39.963590 [debug] [MainThread]: Flushing usage events
+[0m09:33:40.230936 [debug] [MainThread]: An error was encountered while trying to flush usage events
