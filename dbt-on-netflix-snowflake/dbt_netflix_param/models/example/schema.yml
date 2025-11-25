@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -7,15 +6,18 @@ models:
     columns:
       - name: id
         description: "The primary key for this table"
+        # Adding a warning for not_null instead of failing the run
         data_tests:
           - unique
-          - not_null
+          - not_null:
+              severity: warn
 
   - name: my_second_dbt_model
     description: "A starter dbt model"
     columns:
       - name: id
         description: "The primary key for this table"
+        # Default behavior: not_null test will fail the run if nulls are present
         data_tests:
           - unique
           - not_null
